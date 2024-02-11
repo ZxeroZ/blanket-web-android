@@ -1,0 +1,210 @@
+/* Importación de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, .h1-nav {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.blann {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.blanket-container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Estilos de los elementos .sound */
+.sound {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sound img {
+    width: 40px;
+    height: 40px;
+    margin-right: 35px;
+}
+
+.volume-bar {
+    width: 100px;
+}
+
+#main-sounds{
+    width: 272px;
+}
+
+.sound, #main-sounds .sound, #extra-sounds .sound {
+    width: 100%;
+    border: 1px solid rgb(207, 207, 207);
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+}
+
+/* Estilos de los elementos de entrada */
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80%;
+    height: 5px;
+    background: #2071bd;
+    border-radius: 5px;
+}
+
+button {
+    width: 30%;
+    border: none;
+    margin: 10px 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Estilos específicos de la barra de volumen */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-webkit-slider-thumb:active {
+    background: #ffffff;
+}
+
+/* Estilos del menú de navegación */
+.nav {
+    max-width: 1024px;
+    display: flex;
+    height: 60px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.nav h1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: none;
+}
+
+.nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.nav ul li {
+    margin: 10px;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle-line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+
+.eleccion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+
+
+
+#more-sounds-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+/* Estilo para el hover del selector */
+#more-sounds-dropdown:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilo para el foco del selector */
+#more-sounds-dropdown:focus {
+    border-color: #007bff;
+    outline: none;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        align-items: center;
+    }
+
+    .nav ul {
+        position: relative;
+    }
+
+    .nav h1 {
+        margin-left: 15px;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-right: 15px;
+    }
+
+    .nav-links {
+        text-align: center;
+        height: 30%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}

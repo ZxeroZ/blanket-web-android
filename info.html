@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./info.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <h1>Blanket</h1>
+        <div class="nav-toggle" id="nav-toggle">
+            <div class="toggle-line"></div>
+            <div class="toggle-line"></div>
+            <div class="toggle-line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./info.html">Información</a></li>
+        </ul>
+    </nav>
+
+    <div class="acerca-cont">
+        <h1>Acerca de</h1>
+        <p>Este es un port de la aplicacion blanket de linux, no encontraba ninguna para android asi que decidi hacer
+            algo
+            similar no se programar asi que la cree con html y luego la converti en apk no se si la dejare aqui o
+            agregare
+            mas cosas pero de momento para mi es un pequeño logro</p> <br>
+
+        <p>
+            Por favor no añada mas de 5 sonidos adicionales por estetica de la app, la app es de codigo abierto si
+            deseas ver el contenido html pulsa <a href="https://github.com/ZxeroZ">Aqui</a> si deseas ver el codigo
+            fuente de la app original de blanket pulsa <a href="https://github.com/rafaelmardojai/blanket">Aqui</a> los
+            archvos apk se generaran externamente y
+            desconozco el funcionamiento asi que no podre compartirlos 
+        </p> <br>
+        <p>
+            Atencion <br>
+            Esta app no recolecta datos, y no necesita
+            permisos especiales, debido a que converti el html a apk desconozco si existe alguna incrustacion de malware
+            por favor no concedas ningun permiso que no sea esencial para el funcionamiento de la app
+        </p>
+
+        <h2>Port By Zero</h2>
+    </div>
+</body>
+<script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</html>

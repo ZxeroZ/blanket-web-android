@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+ }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    
+}
+
+h2{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 15px;
+}
+
+.acerca-cont h1{
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.acerca-cont{
+    max-width: 90%;
+    margin: auto;
+}
+ 
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav {
+    max-width: 1024px;
+    display: flex;
+    height: 60px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.nav h1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    display: none;
+    /* Ocultar la lista por defecto */
+}
+
+.nav ul.active {
+    display: flex;
+    /* Mostrar la lista cuando se activa el menú hamburguesa */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    /* Altura de la barra de navegación */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.nav ul li {
+    margin: 10px;
+    /* Ajuste de margen */
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    /* Cambiar el color del texto */
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.toggle-line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    /* Cambiar el color de las líneas del ícono */
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        align-items: center;
+    }
+
+    .nav ul {
+        position: relative;
+    }
+
+    .nav h1 {
+        margin-left: 15px;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-right: 15px;
+    }
+
+    .nav-links{
+        text-align: center;
+        height: 30%;
+        padding: 20px 0;
+    }
+}
